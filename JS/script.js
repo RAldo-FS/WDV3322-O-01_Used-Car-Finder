@@ -24,7 +24,6 @@ fetch('./car-dataset.json')
     return response.json();
   })
   .then(jsonData => {
-    console.log('Raw JSON Data:', jsonData);
     // We need to loop through the json file. I'll use .forEach to loop through each json item.
     jsonData.forEach(item => {
         // JSON data uses lowercase "year"
